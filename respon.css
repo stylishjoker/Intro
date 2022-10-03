@@ -2,17 +2,35 @@
   .content {
     letter-spacing: 10px;
     font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    width: max-content;
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
   .content {
     letter-spacing: 10px;
     font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    width: max-content;
   }
 }
 @media (max-width: 1023px) {
   .content {
     letter-spacing: 10px;
-    font-size: 15px;
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    width: max-content;
   }
 }
