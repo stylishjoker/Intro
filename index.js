@@ -1,9 +1,71 @@
+const root = document.getElementById("root");
+const innerClass = () => {
+  const container = document.createElement("div");
+  container.classList.add("container");
+  const flipper = document.createElement("div");
+  flipper.classList.add("flip-container");
+  const HTML = `
+    <div class = "flipper">
+      <div class="front">
+        <div class = "front-bg"></div>
+      </div>
+      <div class="back">
+        <h1>Stylish Joker</h1>
+        <p>PTK - DTMA</p>
+        <div class = "icons">
+          <div class = "icon-group">
+            <span class = "bold"><i class="fa-solid fa-phone"></i></span>
+            <span class = "contact">0362272070</span>
+            <div class = "icon-group">
+              <span class = "bold"><i class="fa-solid fa-envelope"></i></i></span>
+              <a class = "contact">animetplink@gmail.com</a>
+            </div>
+            <div class = "icon-group">
+              <span class = "bold"><i class="fa-solid fa-globe"></i></span>
+              <a class = "contact">www.xyz.com</a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class = "icon-box"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class = "icon-box"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class = "icon-box"><i class="fa-brands fa-google"></i></a>
+        <a href="#" class = "icon-box"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class = "icon-box"><i class="fa-brands fa-dribbble"></i></a>
+        <a href="#" class = "icon-box"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  `;
+  flipper.innerHTML = HTML;
+  container.appendChild(flipper);
+  root.appendChild(container);
+};
+const intro = () => {
+  const intro = document.createElement("div");
+  intro.classList.add("intro");
+  let HTML = "";
+  for (var i = 0; i < 4; i++) {
+    HTML += `<span class = "tile-${i + 1}"></span>`;
+  }
+  const svg = document.createElement("svg");
+  intro.innerHTML = HTML;
+  root.appendChild(intro);
+
+  setTimeout(() => {
+    root.removeChild(intro);
+    root.style.background = "none";
+    innerClass();
+  }, 3400);
+};
+// intro();
+innerClass();
+// <svg width="100vw" height="100vh" id="svg"></svg>
+//background
 $(document).ready(function () {
   var array = [];
   var heightWindow = $(window).height();
   var widthWindow = $(window).width();
 
-  for (var i = 0; i < 40; i++) {
+  for (var i = 0; i < 60; i++) {
     array.push({
       top: Math.floor(Math.random() * heightWindow),
       left: Math.floor(Math.random() * widthWindow),
@@ -86,5 +148,6 @@ $(document).ready(function () {
       }
     });
   }, 500);
-  console.log(array);
 });
+
+//
