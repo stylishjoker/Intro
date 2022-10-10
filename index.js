@@ -7,31 +7,39 @@ const innerClass = () => {
   const HTML = `
     <div class = "flipper">
       <div class="front">
-        <div class = "front-bg"></div>
+        <div class = "front-bg">
+          <img src="./assets/logo.png">
+        </div>
       </div>
       <div class="back">
-        <h1>Stylish Joker</h1>
-        <p>PTK - DTMA</p>
-        <div class = "icons">
-          <div class = "icon-group">
-            <span class = "bold"><i class="fa-solid fa-phone"></i></span>
-            <span class = "contact">0362272070</span>
+        <div class = "back-bg">
+          <img src="./assets/logo.png">
+        </div>
+        <div class = "back-conent">
+          <h1>Stylish Joker</h1>
+          <p>PTK - DTMA</p>
+          <div class = "icons">
             <div class = "icon-group">
-              <span class = "bold"><i class="fa-solid fa-envelope"></i></i></span>
-              <a class = "contact">animetplink@gmail.com</a>
-            </div>
-            <div class = "icon-group">
-              <span class = "bold"><i class="fa-solid fa-globe"></i></span>
-              <a class = "contact">www.xyz.com</a>
+              <span class = "bold"><i class="fa-solid fa-phone"></i></span>
+              <span class = "contact">0362272070</span>
+              <div class = "icon-group">
+                <span class = "bold"><i class="fa-solid fa-envelope"></i></i></span>
+                <a class = "contact">animetplink@gmail.com</a>
+              </div>
+              <div class = "icon-group">
+                <span class = "bold"><i class="fa-solid fa-globe"></i></span>
+                <a class = "contact">www.xyz.com</a>
+              </div>
             </div>
           </div>
+          <a href="#" class = "icon-box"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class = "icon-box"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class = "icon-box"><i class="fa-brands fa-google"></i></a>
+          <a href="#" class = "icon-box"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class = "icon-box"><i class="fa-brands fa-dribbble"></i></a>
+          <a href="#" class = "icon-box"><i class="fa-brands fa-github"></i></a>
         </div>
-        <a href="#" class = "icon-box"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#" class = "icon-box"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#" class = "icon-box"><i class="fa-brands fa-google"></i></a>
-        <a href="#" class = "icon-box"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#" class = "icon-box"><i class="fa-brands fa-dribbble"></i></a>
-        <a href="#" class = "icon-box"><i class="fa-brands fa-github"></i></a>
+        
       </div>
     </div>
   `;
@@ -56,8 +64,8 @@ const intro = () => {
     innerClass();
   }, 3400);
 };
-// intro();
-innerClass();
+intro();
+// innerClass();
 // <svg width="100vw" height="100vh" id="svg"></svg>
 //background
 $(document).ready(function () {
