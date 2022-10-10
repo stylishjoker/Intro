@@ -21,7 +21,6 @@
   width: max-content;
 }
 
-
 #svg {
   position: relative;
   z-index: -1;
@@ -89,14 +88,14 @@
 .flip-container h1 {
   color: #000;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin-left: 30%;
+  margin-left: 10%;
   line-height: 90%;
   margin-top: 5%;
 }
 .flip-container p {
   color: #000;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin-left: 30%;
+  margin-left: 10%;
   line-height: 90%;
   font-size: 16px;
   padding-top: 15px;
@@ -106,7 +105,7 @@
 .flip-container .icons {
   color: #000;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin-left: 30%;
+  margin-left: 10%;
   line-height: 90%;
 }
 .bold {
@@ -134,7 +133,7 @@
   width: 35px; */
   padding: 5px 7px;
   top: 75px;
-  left: 30%;
+  left: 10%;
   display: inline-block;
   border: 2px solid #000;
   cursor: pointer;
@@ -150,18 +149,17 @@
   margin-top: 5px;
 }
 
-.front-bg{
+.front {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateY(calc(50% + 50px));
 }
-.front-bg img{
+.front-bg img {
   width: 150px;
   height: auto;
 }
-.back-bg{
+.back-bg {
   display: flex;
   flex-direction: column;
   width: 20%;
@@ -169,14 +167,14 @@
   justify-content: center;
   align-items: center;
 }
-.back-bg img{
+.back-bg img {
   width: 100px;
   height: auto;
 }
-.back-content{
-  width: 80%;
+.back-content {
+  width: 100%;
 }
-.back-bg::after{
+.back-bg::after {
   content: "";
   background-image: url(assets/logo.png);
   background-size: cover;
@@ -208,8 +206,15 @@ span:nth-child(4) {
     filter: blur(0px);
   }
 }
-.flip-container:hover .back-conent h1{
+.back-conent h1 {
+  font-size: 25px;
+  -webkit-text-stroke: 2px #000;
+  color: white;
+  text-transform: uppercase;
+}
+.flip-container:hover .back-conent h1 {
   opacity: 0;
   animation: show_content 0.9s ease-in-out 1 forwards;
+
   /* text-transform: uppercase; */
 }
