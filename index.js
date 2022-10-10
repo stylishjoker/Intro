@@ -32,12 +32,12 @@ const innerClass = () => {
               </div>
             </div>
           </div>
-          <a href="https://www.facebook.com/nobless.anime/" class = "icon-box"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#" class = "icon-box"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#" class = "icon-box"><i class="fa-brands fa-google"></i></a>
-          <a href="#" class = "icon-box"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#" class = "icon-box"><i class="fa-brands fa-dribbble"></i></a>
-          <a href="https://github.com/stylishjoker" class = "icon-box"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.facebook.com/nobless.anime/"  target = "_blank"class = "icon-box"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" target = "_blank" class = "icon-box"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" target = "_blank" class = "icon-box"><i class="fa-brands fa-google"></i></a>
+          <a href="#" target = "_blank" class = "icon-box"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" target = "_blank" class = "icon-box"><i class="fa-brands fa-dribbble"></i></a>
+          <a href="https://github.com/stylishjoker" target = "_blank" class = "icon-box"><i class="fa-brands fa-github"></i></a>
         </div>
         
       </div>
